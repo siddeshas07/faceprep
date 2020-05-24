@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  //Type your code here.
+  
+  int n,i,j,mat[89][90],m,principal=0,secondary=0,sum1=0,sum3=0;
+  //Type your code here.
+  cin>>n;
+  cin>>m;
+  for (int i = 0; i < n; i++)  
+        for (int j = 0; j < m; j++)
+  
+          cin>>mat[i][j];
+  
+  
+  
+  for (int i = 0; i < n; i++) { 
+        for (int j = 0; j < m; j++) { 
+  
+            // Condition for principal diagonal 
+           if ((i + j) == (n - 1)) 
+                principal += mat[i][j]; 
+}}
+  for (int i = 0; i < 1; i++)  
+        for (int j = 0; j < m-1; j++)
+     sum1+=mat[i][j];
+ // for (int i = n; i < n; i++) 
+  for (int i = n; i < n+1; i++)  
+        for (int j = 1; j < m; j++)
+     sum3=sum3+mat[i][j];
+          cout<<sum3;
+ // cout<<sum1<<" "<<sum2<<" "<<principal;
+}
