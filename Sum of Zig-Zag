@@ -26,9 +26,11 @@ int main()
         for (int j = 0; j < m-1; j++)
      sum1+=mat[i][j];
  // for (int i = n; i < n; i++) 
-  for (int i = n; i < n+1; i++)  
+  for (int i = n-1; i < n; i++)  
         for (int j = 1; j < m; j++)
      sum3=sum3+mat[i][j];
-          cout<<sum3;
- // cout<<sum1<<" "<<sum2<<" "<<principal;
+        //  cout<<sum3;
+        //  cout<<mat[i][j];
+  cout<<"Sum of Zig-Zag pattern is "<<sum1+sum3+principal;
 }
+  
